@@ -1,0 +1,3 @@
+'''
+The base curve package
+'''
