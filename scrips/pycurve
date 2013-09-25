@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+
+import pycurve
+
+def main():
+    curve = pycurve.Curve()
+    print 'foo'
+
+if __name__ == '__main__':
+    main()
