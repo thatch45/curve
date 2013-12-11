@@ -18,7 +18,8 @@ def parse():
     parser.add_option(
             '--server-port',
             dest='server_port',
-            default='4510',
+            default=4510,
+            type='int',
             help='the server port')
     parser.add_option(
             '-m',
