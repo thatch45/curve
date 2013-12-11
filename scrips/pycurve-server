@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+# Import pycurve libs
+import pycurve.server
+import pycurve.parser
+
+def main():
+    '''
+    The main function
+    '''
+    opts = pycurve.parser.Server().parse()
+    server = pycurve.server.Server(opts)
+    server.bind()
