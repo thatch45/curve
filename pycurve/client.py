@@ -12,7 +12,7 @@ import time
 class Client(object):
     def __init__(self, opts):
         self.opts = opts
-        self.retserv = pycurve.server.Server()
+        self.retserv = pycurve.server.Server(self.opts['ret_ip'], self.opts['ret_port'])
         self.retserv.bind()
 
     def send(self, body):

@@ -22,6 +22,17 @@ def parse():
             type='int',
             help='the server port')
     parser.add_option(
+            '--ret-ip',
+            dest='ret_ip',
+            default='127.0.0.1',
+            help='the ret ip')
+    parser.add_option(
+            '--ret-port',
+            dest='ret_port',
+            default=4511,
+            type='int',
+            help='the ret port')
+    parser.add_option(
             '-m',
             '--message',
             dest='message',
