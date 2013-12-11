@@ -10,7 +10,7 @@ def main():
     '''
     opts = pycurve.parser.parse()
     client = pycurve.client.Client(opts)
-    client.send('foobar')
+    print client.send_recv('foobar')
 
 if __name__ == '__main__':
     main()
