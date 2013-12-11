@@ -8,6 +8,6 @@ def main():
     '''
     The main function
     '''
-    opts = pycurve.parser.Client().parse()
+    opts = pycurve.parser.parse()
     client = pycurve.client.Client(opts)
     client.send('foobar')

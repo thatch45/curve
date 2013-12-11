@@ -8,6 +8,6 @@ def main():
     '''
     The main function
     '''
-    opts = pycurve.parser.Server().parse()
+    opts = pycurve.parser.parse()
     server = pycurve.server.Server(opts)
     server.bind()
