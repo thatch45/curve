@@ -44,6 +44,8 @@ class Server(object):
         '''
         Start handling all incoming information
         '''
+        data = None
+        addr = None
         while True:
             try:
                 data, addr = self.sock.recvfrom(1024)
