@@ -11,3 +11,6 @@ def main():
     opts = pycurve.parser.parse()
     server = pycurve.server.Server(opts)
     server.bind()
+
+if __name__ == '__main__':
+    main()

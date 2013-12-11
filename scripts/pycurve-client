@@ -11,3 +11,6 @@ def main():
     opts = pycurve.parser.parse()
     client = pycurve.client.Client(opts)
     client.send('foobar')
+
+if __name__ == '__main__':
+    main()
