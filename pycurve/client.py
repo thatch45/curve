@@ -13,7 +13,7 @@ class Client(object):
     def send(self, body):
         '''
         '''
-        payload = json.dumpd(
+        payload = json.dumps(
                 {'body': body,
                   'ret': ''}
                 )
