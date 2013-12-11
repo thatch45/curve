@@ -18,4 +18,4 @@ class Server(object):
         sock.bind((self.opts['server_ip'], self.opts['server_port']))
         while True:
             data, addr = sock.recvfrom(1024)
-            # Deal with data here
+            print data
