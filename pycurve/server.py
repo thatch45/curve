@@ -36,7 +36,7 @@ class Server(object):
             port = self.opts['server_port']
         sock = socket.socket(socket.AF_INET,
                              socket.SOCK_DGRAM)
-        sock.settimeout(self.opts.get('server_timeout', '0.1'))
+        sock.settimeout(self.opts.get('server_timeout', 0.1))
         sock.bind((ip, port))
         return sock
 
