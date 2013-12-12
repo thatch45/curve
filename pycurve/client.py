@@ -16,7 +16,6 @@ class Client(object):
                 self.opts,
                 self.opts['ret_ip'],
                 self.opts['ret_port'])
-        self.retserv.bind()
 
     def send(self, body):
         '''
